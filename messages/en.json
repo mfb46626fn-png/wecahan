@@ -1,0 +1,44 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "about": "About Us",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "Hero": {
+        "title1": "Automate the Ordinary",
+        "title2": "Unlock Creativity",
+        "subtitle": "Building intelligent systems and scalable e-commerce infrastructures. Architecting the future of digital commerce.",
+        "cta": "Explore Projects"
+    },
+    "About": {
+        "title": "About Us",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "founder1Role": "Co-Founder & CTO",
+        "founder1Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+        "founder2Role": "Co-Founder & CEO",
+        "founder2Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+    },
+    "Projects": {
+        "title": "Our Ecosystem",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat condimentum velit.",
+        "prificientDesc": "SaaS platform offering automation, order management, and detailed profitability analysis for e-commerce sellers.",
+        "prificientStatus": "In Active Development",
+        "yuvaaDesc": "Global e-commerce brand focusing on wall decor, relief, and handmade art, offering aesthetics and minimalism.",
+        "dropsetupDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+        "shopifyDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+        "automationDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
+    },
+    "Contact": {
+        "title": "Get in Touch",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "nameLabel": "Your Name",
+        "emailLabel": "Your Email",
+        "messageLabel": "Your Message",
+        "submit": "Send Message"
+    },
+    "Footer": {
+        "description": "Building your digital future with technology, e-commerce, and automation solutions.",
+        "rights": "All rights reserved."
+    }
+}

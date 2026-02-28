@@ -1,0 +1,44 @@
+{
+    "Navigation": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "projects": "Projelerimiz",
+        "contact": "İletişim"
+    },
+    "Hero": {
+        "title1": "Sıradan Olanı Otomatikleştirip",
+        "title2": "Yaratıcılığa Alan Açıyoruz",
+        "subtitle": "Akıllı sistemler ve ölçeklenebilir e-ticaret altyapıları inşa ediyoruz. Dijital ticaretin geleceğini tasarlıyoruz.",
+        "cta": "Projeleri İnceleyin"
+    },
+    "About": {
+        "title": "Hakkımızda",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "founder1Role": "Kurucu Ortak & CTO",
+        "founder1Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+        "founder2Role": "Kurucu Ortak & CEO",
+        "founder2Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+    },
+    "Projects": {
+        "title": "Ekosistemimiz",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat condimentum velit.",
+        "prificientDesc": "E-ticaret satıcıları (Shopify, Amazon, Trendyol, Etsy) için otomasyon, sipariş yönetimi ve detaylı kârlılık analizi sunan SaaS platformu.",
+        "prificientStatus": "Şu anda aktif geliştirme aşamasında ve dışarıya kapalı.",
+        "yuvaaDesc": "Duvar dekorasyonu, rölyef ve el sanatları (handmade art) üzerine odaklanan, estetik ve minimalizm sunan global e-ticaret markası.",
+        "dropsetupDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+        "shopifyDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+        "automationDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
+    },
+    "Contact": {
+        "title": "İletişime Geçin",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "nameLabel": "Adınız",
+        "emailLabel": "E-posta Adresiniz",
+        "messageLabel": "Mesajınız",
+        "submit": "Gönder"
+    },
+    "Footer": {
+        "description": "Teknoloji, e-ticaret ve otomasyon çözümleriyle dijital geleceğinizi inşa ediyoruz.",
+        "rights": "Tüm hakları saklıdır."
+    }
+}
