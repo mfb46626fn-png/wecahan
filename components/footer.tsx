@@ -1,55 +1,55 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter } from "lucide-react";
-
-const socialLinks = [
-    { name: "LinkedIn", href: "#", icon: Linkedin },
-    { name: "Twitter", href: "#", icon: Twitter },
-    { name: "GitHub", href: "#", icon: Github },
-];
+import { Mail, MapPin } from "lucide-react";
 
 export function Footer() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <footer className="relative border-t border-white/5">
-            <div className="container-custom section-padding py-12">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                    {/* Logo and copyright */}
-                    <div className="flex flex-col items-center md:items-start gap-2">
-                        <span className="text-xl font-bold gradient-text">We CaHan</span>
-                        <p className="text-sm text-muted-foreground">
-                            © {currentYear} We CaHan. All rights reserved.
+        <footer className="relative pt-24 pb-8 border-t border-white/5 bg-neutral-950">
+            <div className="container-custom px-4">
+                <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-5xl mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="space-y-6"
+                    >
+                        <h2 className="text-3xl font-bold text-white tracking-tight">We CaHan</h2>
+                        <p className="text-neutral-400 max-w-sm leading-relaxed">
+                            Teknoloji, e-ticaret ve otomasyon çözümleriyle dijital geleceğinizi inşa ediyoruz.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    {/* Social links */}
-                    <div className="flex items-center gap-4">
-                        {socialLinks.map((link) => (
-                            <motion.a
-                                key={link.name}
-                                href={link.href}
-                                whileHover={{ scale: 1.1, y: -2 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
-                                aria-label={link.name}
-                            >
-                                <link.icon className="w-4 h-4 text-muted-foreground hover:text-foreground transition-colors" />
-                            </motion.a>
-                        ))}
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="flex flex-col md:items-end space-y-4"
+                    >
+                        <a
+                            href="mailto:contact@wecahan.com"
+                            className="inline-flex items-center gap-3 text-neutral-300 hover:text-white transition-colors group"
+                        >
+                            <Mail className="w-5 h-5 group-hover:text-blue-400 transition-colors" />
+                            <span>contact@wecahan.com</span>
+                        </a>
+                        <div className="inline-flex items-center gap-3 text-neutral-300">
+                            <MapPin className="w-5 h-5" />
+                            <span>Global Operations</span>
+                        </div>
+                    </motion.div>
                 </div>
 
-                {/* Bottom tagline */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                    className="mt-8 pt-8 border-t border-white/5 text-center"
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 }}
+                    className="text-center pt-8 border-t border-white/5"
                 >
-                    <p className="text-xs text-muted-foreground">
-                        Architecting the Future of Digital Commerce
+                    <p className="text-sm text-neutral-500">
+                        &copy; 2026 We CaHan. Tüm hakları saklıdır.
                     </p>
                 </motion.div>
             </div>
