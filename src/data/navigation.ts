@@ -4,27 +4,24 @@ export interface NavLink {
 }
 
 export const mainNavigation: NavLink[] = [
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "about", href: "/about" },
+  { name: "projects", href: "/projects" },
+  { name: "contact", href: "/contact" },
 ];
 
 export const footerNavigation = {
-  brand: [
-    { name: "We CaHan", href: "/" },
-  ],
   nav: [
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    { name: "about", href: "/about" },
+    { name: "projects", href: "/projects" },
+    { name: "contact", href: "/contact" },
   ],
   projects: [
-    { name: "AAA Automation", href: "/projects/aaa-automation" },
-    { name: "Prificient", href: "/projects/prificient" },
-    { name: "Prificient Tools", href: "/projects/prificient-tools" },
+    { name: "aaa-automation", href: "/projects/aaa-automation" },
+    { name: "prificient", href: "/projects/prificient" },
+    { name: "prificient-tools", href: "/projects/prificient-tools" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
+    { name: "privacy", href: "/privacy" },
+    { name: "terms", href: "/terms" },
   ],
 };

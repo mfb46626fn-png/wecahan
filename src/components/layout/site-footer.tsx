@@ -1,42 +1,45 @@
+"use client";
+
 import React from "react";
 import { Link } from "@/i18n/routing";
 import { footerNavigation as navigation } from "@/data/navigation";
+import { useTranslations } from "next-intl";
 
 /**
  * SiteFooter
- * A multi-column, professional footer for the global brand.
+ * A clean, multi-column professional footer for a premium corporate brand.
  */
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Navigation");
+  const tProj = useTranslations("ProjectsData");
 
   return (
-    <footer className="relative border-t border-white/5 bg-black py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+    <footer className="relative border-t border-white/5 bg-black py-20 md:py-32">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
         
         {/* Brand Section */}
-        <div className="flex flex-col space-y-6">
-          <Link href="/" className="group flex items-center space-x-2">
-            <div className="w-8 h-8 bg-[#00f0ff] rounded-sm transform rotate-45 group-hover:rotate-90 transition-transform duration-500 shadow-[0_0_10px_rgba(0,240,255,0.5)]" />
-            <span className="text-xl font-bold tracking-tighter uppercase text-white glow-text">
-              We CaHan
+        <div className="flex flex-col space-y-8">
+          <Link href="/" className="group flex items-center space-x-3">
+             <div className="w-10 h-1 bg-white" />
+            <span className="text-2xl font-bold tracking-tighter uppercase text-white">
+              WeCaHan
             </span>
           </Link>
-          <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
-            Architecting intelligent systems and scalable digital infrastructures for the future of commerce and technology.
+          <p className="text-neutral-500 text-sm leading-relaxed max-w-xs font-light">
+            {t("description")}
           </p>
-          <div className="flex space-x-4 pt-2">
-             {/* Social placeholders if needed */}
-          </div>
         </div>
 
         {/* Navigation Section */}
-        <div className="flex flex-col space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-widest text-[#00f0ff]">Explore</h3>
-          <ul className="space-y-3">
+        <div className="flex flex-col space-y-6">
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.4em] text-white/40">{t("explore")}</h3>
+          <ul className="space-y-4">
             {navigation.nav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-wider">
-                   {item.name}
+                <Link href={item.href} className="text-neutral-500 hover:text-white transition-colors text-xs uppercase font-bold tracking-[0.3em]">
+                   {tNav(item.name)}
                 </Link>
               </li>
             ))}
@@ -44,13 +47,13 @@ export default function SiteFooter() {
         </div>
 
         {/* Selected Projects Section */}
-        <div className="flex flex-col space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-widest text-[#00f0ff]">Ecosystem</h3>
-          <ul className="space-y-3">
+        <div className="flex flex-col space-y-6">
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.4em] text-white/40">{t("ecosystem")}</h3>
+          <ul className="space-y-4">
             {navigation.projects.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-wider">
-                   {item.name}
+                <Link href={item.href} className="text-neutral-500 hover:text-white transition-colors text-xs uppercase font-bold tracking-[0.3em]">
+                   {tProj(`${item.name}.name`)}
                 </Link>
               </li>
             ))}
@@ -58,13 +61,13 @@ export default function SiteFooter() {
         </div>
 
         {/* Legal Section */}
-        <div className="flex flex-col space-y-4">
-          <h3 className="text-sm font-bold uppercase tracking-widest text-[#00f0ff]">Compliance</h3>
-          <ul className="space-y-3">
+        <div className="flex flex-col space-y-6">
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.4em] text-white/40">{t("compliance")}</h3>
+          <ul className="space-y-4">
             {navigation.legal.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-wider">
-                   {item.name}
+                <Link href={item.href} className="text-neutral-500 hover:text-white transition-colors text-xs uppercase font-bold tracking-[0.3em]">
+                   {tNav(item.name)}
                 </Link>
               </li>
             ))}
@@ -73,12 +76,12 @@ export default function SiteFooter() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto px-6 mt-16 md:mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <p className="text-neutral-500 text-xs tracking-widest uppercase">
-          © {currentYear} We CaHan. All rights reserved.
+      <div className="max-w-7xl mx-auto px-6 mt-24 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+        <p className="text-neutral-600 text-[10px] tracking-[0.3em] uppercase">
+          © {currentYear} WeCaHan. {t("rights")}
         </p>
-        <p className="text-neutral-500 text-xs tracking-widest uppercase">
-          United in Innovation.
+        <p className="text-neutral-600 text-[10px] tracking-[0.3em] uppercase">
+          {t("united")}
         </p>
       </div>
     </footer>

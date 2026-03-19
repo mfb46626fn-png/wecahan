@@ -5,11 +5,13 @@
   --color-foreground: #ffffff;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  /* Custom Futuristic Variables */
-  --color-neon-blue: #00f0ff;
-  --color-neon-purple: #b026ff;
+  
+  /* Modern Tech Color Palette - Muted & Premium */
+  --color-brand-blue: #0070f3;
+  --color-brand-accent: #00d4ff;
   --color-dark-surface: #0a0a0c;
-  --color-dark-border: rgba(255, 255, 255, 0.05);
+  --color-dark-border: rgba(255, 255, 255, 0.08);
+  --color-muted-foreground: #888888;
 }
 
 :root {
@@ -27,54 +29,37 @@
 
   body {
     background-color: #000000;
-    /* Clean futuristic grid background */
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+    /* subtle radial gradient for depth instead of grid */
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
     background-attachment: fixed;
     min-height: 100vh;
   }
 }
 
-/* Glassmorphism & Cyber/Futuristic Utils */
 @layer components {
+  /* Clean Surface / Minimal Glass */
   .glass-panel {
-    background: rgba(10, 10, 12, 0.7);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.03);
+    background: rgba(10, 10, 12, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: border-color 0.3s ease, background 0.3s ease;
   }
 
-  .glow-border {
-    position: relative;
-    border: 1px solid rgba(0, 240, 255, 0.15);
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.03);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .glow-border:hover {
-    border-color: rgba(0, 240, 255, 0.6);
-    box-shadow: 0 0 30px rgba(0, 240, 255, 0.1), inset 0 0 10px rgba(0, 240, 255, 0.02);
-    transform: translateY(-2px);
-  }
-
-  .glow-text {
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
-  }
-
-  /* Input Fields */
+  /* Clean Input Fields */
   .futuristic-input {
-    @apply w-full bg-black/40 border border-white/5 rounded-none px-4 py-3 text-white placeholder-neutral-600 focus:outline-none focus:border-[#00f0ff]/50 transition-all;
+    @apply w-full bg-neutral-900 border border-white/10 rounded-sm px-4 py-3 text-white placeholder-neutral-700 focus:outline-none focus:border-white/30 transition-all;
   }
 
+  /* Premium Modern Button */
   .futuristic-btn {
-    @apply relative overflow-hidden bg-white text-black px-8 py-3 font-semibold tracking-wider uppercase text-sm transition-all;
+    @apply relative overflow-hidden bg-white text-black px-10 py-3 font-bold tracking-[0.2em] uppercase text-xs transition-all duration-300;
   }
 
   .futuristic-btn:hover {
-    @apply bg-[#00f0ff] text-black;
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    @apply bg-neutral-200 text-black;
+    transform: translateY(-1px);
   }
 }
 
@@ -87,9 +72,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 240, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
 }

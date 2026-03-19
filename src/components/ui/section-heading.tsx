@@ -1,9 +1,10 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
 /**
  * SectionHeading
  * A standardized heading for page sections.
- * Features a small subtitle and a prominent, tracking-tight title.
+ * Optimized for a clean, credible corporate feel.
  */
 interface SectionHeadingProps {
   title: string;
@@ -20,20 +21,25 @@ export default function SectionHeading({
   align = "center",
   className = "",
 }: SectionHeadingProps) {
+  const t = useTranslations("SectionHeadings");
   const alignmentClass = align === "center" ? "text-center mx-auto" : "text-left";
 
+  const displayTitle = title.includes(".") ? title : (t.has(title) ? t(title) : title);
+  const displaySubtitle = subtitle && (subtitle.includes(".") ? subtitle : (t.has(subtitle) ? t(subtitle) : subtitle));
+
   return (
-    <div className={`max-w-3xl mb-10 md:mb-14 ${alignmentClass} ${className}`}>
+    <div className={`max-w-3xl mb-12 md:mb-16 ${alignmentClass} ${className}`}>
       {subtitle && (
-        <span className="inline-block text-[#00f0ff] text-xs font-bold tracking-[0.2em] uppercase mb-4 glow-text">
-          {subtitle}
+        <span className="inline-block text-neutral-400 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">
+          {displaySubtitle}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white uppercase mb-6 leading-tight">
-        {title}
+      <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white uppercase mb-6 leading-tight">
+        {displayTitle}
       </h2>
+      <div className="w-12 h-[2px] bg-white/20 mx-auto mb-8" />
       {description && (
-        <p className="text-neutral-400 text-lg md:text-xl leading-relaxed">
+        <p className="text-neutral-400 text-lg md:text-xl leading-relaxed font-light">
           {description}
         </p>
       )}

@@ -1,17 +1,19 @@
 import React from "react";
 import SectionShell from "@/components/layout/section-shell";
+import { useTranslations } from "next-intl";
 
 /**
  * EcosystemNoteBlock
- * Brief statement unifying the projects.
+ * Brief, clean statement unifying the projects.
  */
 export default function EcosystemNoteBlock() {
+  const t = useTranslations("Projects");
+
   return (
-    <SectionShell className="bg-neutral-950/20">
-      <div className="max-w-4xl mx-auto text-center border-t border-b border-white/5 py-12">
-        <p className="text-neutral-500 text-lg md:text-xl italic leading-relaxed font-light">
-          &quot;Each project reflects a different layer of the broader 
-          <span className="text-white font-bold uppercase tracking-widest ml-2">WeCaHan</span> product ecosystem.&quot;
+    <SectionShell>
+      <div className="max-w-5xl mx-auto text-center border-t border-b border-white/5 py-16">
+        <p className="text-neutral-500 text-xl md:text-2xl italic leading-relaxed font-light px-6">
+          &quot;{t("ecosystemNote")}&quot;
         </p>
       </div>
     </SectionShell>

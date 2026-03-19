@@ -2,48 +2,49 @@ import React from "react";
 import SectionShell from "@/components/layout/section-shell";
 import SecondaryButton from "@/components/ui/secondary-button";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 /**
  * AboutSnapshotBlock
- * A concise summary of the brand mission.
+ * A clean, professional summary of the brand mission.
  */
 export default function AboutSnapshotBlock() {
+  const t = useTranslations("Home");
+  const tCommon = useTranslations("Common");
+
   return (
     <SectionShell>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
-          <span className="text-[#00f0ff] text-xs font-bold tracking-[0.2em] uppercase glow-text">
-            About WeCaHan
+          <span className="text-neutral-500 text-[10px] font-bold tracking-[0.3em] uppercase">
+            {t("aboutBadge")}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter text-white uppercase leading-tight">
-            Engineering Simplicity for <br className="hidden md:block" />
-            the Digital economy
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white uppercase leading-tight">
+            {t("aboutTitle")}
           </h2>
-          <div className="space-y-6 text-neutral-400 text-lg leading-relaxed">
+          <div className="space-y-6 text-neutral-400 text-lg leading-relaxed font-light">
             <p>
-              WeCaHan builds modern, scalable, and practical digital systems designed 
-              to thrive in the modern economy. Our focus is on removing complexity 
-              from operational workflows.
+              {t("aboutP1")}
             </p>
             <p>
-              By combining engineering excellence with a focus on real-world value, 
-              we ensure that every system we build serves as a long-term asset.
+              {t("aboutP2")}
             </p>
           </div>
           <Link href="/about" className="inline-block pt-4">
-            <SecondaryButton>Learn More About Us</SecondaryButton>
+            <SecondaryButton>{tCommon("learnMore")}</SecondaryButton>
           </Link>
         </div>
         
-        <div className="relative aspect-video glass-panel overflow-hidden border border-white/10 group">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff]/10 to-transparent opacity-50" />
+        <div className="relative aspect-video bg-neutral-900 border border-white/10 rounded-sm overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-50" />
           <div className="absolute inset-0 flex items-center justify-center">
-             <div className="w-24 h-24 border border-[#00f0ff]/20 rounded-full animate-ping" />
+             <div className="w-32 h-32 border border-white/5 rounded-full" />
+             <div className="absolute w-24 h-24 border border-white/10 rounded-full" />
           </div>
-          {/* Abstract visual content */}
-          <div className="absolute bottom-8 left-8">
-            <div className="h-1 w-32 bg-white/10 mb-2" />
-            <div className="h-1 w-16 bg-white/10" />
+          {/* Subtle visual content */}
+          <div className="absolute bottom-10 left-10 opacity-20">
+            <div className="h-[2px] w-40 bg-white mb-2" />
+            <div className="h-[2px] w-24 bg-white" />
           </div>
         </div>
       </div>

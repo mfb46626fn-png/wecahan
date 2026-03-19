@@ -1,44 +1,244 @@
 {
-    "Navigation": {
-        "home": "Ana Sayfa",
-        "about": "Hakkımızda",
-        "projects": "Projelerimiz",
-        "contact": "İletişim"
+  "Common": {
+    "viewDetails": "Detayları Görüntüle",
+    "explore": "Keşfet",
+    "contact": "İletişime Geç",
+    "learnMore": "Daha Fazlası",
+    "foundations": "Temeller"
+  },
+  "Metadata": {
+    "title": "WeCaHan | Geleceği İnşa Ediyoruz",
+    "description": "Modern ekonomi için akıllı sistemler ve ölçeklenebilir dijital altyapılar tasarlıyoruz."
+  },
+  "Navigation": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları"
+  },
+  "Hero": {
+    "badge": "WeCaHan",
+    "titlePrefix": "Akıllı Dijital",
+    "titleGradient": "Sistemler İnşa Ediyoruz",
+    "description": "Ölçeklenebilir otomasyonlar, yapay zeka destekli sistemler ve finansal araçlar ile dijital altyapının geleceğini tasarlıyoruz.",
+    "ctaPrimary": "Projeleri Keşfet",
+    "ctaSecondary": "WeCaHan Hakkında"
+  },
+  "SectionHeadings": {
+    "capabilities": "Yetkinlikler",
+    "whatWeBuild": "Neler İnşa Ediyoruz",
+    "expertise": "Uzmanlık Alanları",
+    "focusAreas": "Odak Noktaları",
+    "showcase": "Vitrin",
+    "selectedProjects": "Seçili Projeler",
+    "leadership": "Liderlik",
+    "founders": "Kurucular",
+    "strategy": "Strateji",
+    "visionMission": "Vizyon & Misyon",
+    "philosophy": "Felsefe",
+    "getInTouch": "İletişime Geçin",
+    "whoWeAre": "Biz Kimiz",
+    "howWeThink": "Nasıl Düşünüyoruz",
+    "initiatives": "Girişimler"
+  },
+  "Home": {
+    "capabilitiesDescription": "Uzun vadeli değer ve ölçeklenebilirlik sağlayan sistemler oluşturmaya odaklanıyoruz.",
+    "aboutBadge": "WeCaHan Hakkında",
+    "aboutTitle": "Dijital Ekonomi İçin Yalın Mühendislik",
+    "aboutP1": "WeCaHan, modern ekonomide gelişmek üzere tasarlanmış modern, ölçeklenebilir ve pratik dijital sistemler inşa eder. Odağımız, operasyonel iş akışlarındaki karmaşıklığı ortadan kaldırmaktır.",
+    "aboutP2": "Mühendislik mükemmeliyetini gerçek dünya değeriyle birleştirerek, inşa ettiğimiz her sistemin uzun vadeli bir varlık olmasını sağlıyoruz.",
+    "projectsDescription": "Akıllı sistemlerin ve yüksek etkili dijital girişimlerin bir listesi.",
+    "visionLabel": "Vizyon",
+    "missionLabel": "Misyon",
+    "visionDescription": "Karmaşıklığı akıllı mühendislikle görünmez kılarak, küresel ekonominin yeni nesline güç veren temel dijital sistemleri kurgulamak.",
+    "missionDescription": "İşletmelerin netlik ve verimlilikle hareket etmesini sağlayan odaklanmış, ölçeklenebilir ve güvenilir yazılım altyapıları ve otomasyon araçları inşa ediyoruz.",
+    "ctaTitle": "Gelecek Nesli İnşa Etmeye Hazır Mısınız?",
+    "ctaDescription": "WeCaHan'ın dijital altyapınızı mimari olarak nasıl kurgulayabileceğini ve temel iş sistemlerinizi nasıl otomatize edebileceğini konuşalım."
+  },
+  "About": {
+    "introDescription": "Dijital ekonominin temel sistemlerini kurgulamaya adanmış profesyonel bir mühendislik kolektifi.",
+    "whoWeAreTitle": "Geleceği İnşa Etmek",
+    "whoWeAreP1": "WeCaHan bir yazılım stüdyosundan daha fazlasıdır. Otomasyon, finansal zeka ve dijital altyapının kesişimine odaklanmış bir mühendislik kolektifidir.",
+    "whoWeAreP2": "Misyonumuz, sadece işlevsel değil, aynı zamanda temel teşkil eden sistemler inşa etmektir; karmaşık küresel pazarda liderlik etmek için gereken netliği ve ölçeklenebilirliği sağlıyoruz.",
+    "howWeThink1": "Yalınlık",
+    "howWeThink1Desc": "Karmaşıklığın uygulamanın düşmanı olduğuna inanıyoruz. Sistemlerimiz sezgisel, temiz ve son derece etkili olacak şekilde inşa edilir.",
+    "howWeThink2": "Ölçeklenebilirlik",
+    "howWeThink2Desc": "Temeller sağlam olmalıdır. Her çözümü, modern ve sağlam teknolojiler kullanarak yarının büyümesini göz önünde bulundurarak kurguluyoruz.",
+    "howWeThink3": "Uygulama",
+    "howWeThink3Desc": "Mühendislik sonuçlarla ilgilidir. Gereksiz soyutlamalar yerine pratik performansa ve gerçek dünya değerine öncelik veriyoruz.",
+    "philosophyDescription": "Temel ilkelerimiz, yaptığımız her mimari karara yön verir.",
+    "whatWeBuildDetailDescription": "Mühendislik odağımız dijital otomasyon ve altyapının birden fazla disiplinine yayılmaktadır.",
+    "capabilitiesDetail": {
+      "automation": {
+        "title": "Otomasyon Sistemleri",
+        "items": ["İş Akışı Optimizasyonu", "Eski Sistem Entegrasyonu", "Özel API Ara Katman Yazılımı"]
+      },
+      "infrastructure": {
+        "title": "Dijital Altyapı",
+        "items": ["Bulut Mimarisi", "Ölçeklenebilir Veritabanı Tasarımı", "Sistem Güvenilirliği"]
+      },
+      "financial": {
+        "title": "Finansal Zeka",
+        "items": ["Maliyet Takip Platformları", "Kar Görünürlük Araçları", "Operasyonel Analitik"]
+      },
+      "ecosystems": {
+        "title": "Ürün Ekosistemleri",
+        "items": ["Modüler Yazılım Tasarımı", "Birleşik Kontrol Panelleri", "Ölçeklenebilir Uzantılar"]
+      }
     },
-    "Hero": {
-        "title1": "Sıradan Olanı Otomatikleştirip",
-        "title2": "Yaratıcılığa Alan Açıyoruz",
-        "subtitle": "Akıllı sistemler ve ölçeklenebilir e-ticaret altyapıları inşa ediyoruz. Dijital ticaretin geleceğini tasarlıyoruz.",
-        "cta": "Projeleri İnceleyin"
+    "foundersDescription": "Marka anlatısı bireylerin önüne geçer, ancak mühendislik köklerimiz her zaman sağlam kalır.",
+    "foundersGridDescription": "Özel mühendislik odağı ve pratik uygulama ile hareket ediyoruz.",
+    "foundersNote": "* Kurucular, yalnızca WeCaHan ekosistemi için mimari denetim ve özel sistem tasarımına odaklanır.",
+    "closingTitle": "Odaklanmış dijital sistemler için temel oluşturuyoruz",
+    "closingDescription": "WeCaHan, daha verimli ve ölçeklenebilir bir dijital ekonomi için odaklanmış dijital sistemler inşa ediyor. Her kod satırı, istikrar ve performansa yapılan bir yatırımdır."
+  },
+  "Projects": {
+    "introDescription": "WeCaHan ekosistemi içinde inşa edilmiş akıllı sistemler, finansal araçlar ve dijital altyapıdan oluşan odaklanmış bir koleksiyon.",
+    "ecosystemNote": "Her proje, geniş WeCaHan ürün ekosisteminin farklı bir katmanını yansıtır.",
+    "ctaTitle": "Neler inşa ettiğimizle ilgileniyor musunuz?",
+    "ctaDescription": "Yeni girişimler, teknik mimariler ve ölçeklenebilir dijital sistemler hakkında konuşmaya her zaman açığız."
+  },
+  "Contact": {
+    "introDescription": "Proje talepleri, teknik iş birlikleri veya genel ekosistem iletişimi için aşağıdaki formu kullanarak bize ulaşın.",
+    "formBadge": "Proje Talebi",
+    "formTitle": "Bize Teknik Bir Özet Gönderin",
+    "formDescription": "İster spesifik bir yazılım mimarisi talebi, ister stratejik bir dijital sistem kurgusu olsun, ortaklarımız teknik netlik sağlamaya hazırdır.",
+    "labels": {
+      "name": "Ad Soyad",
+      "email": "E-posta Adresi",
+      "company": "Şirket / Proje",
+      "message": "Mesaj"
     },
-    "About": {
-        "title": "Hakkımızda",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "founder1Role": "Kurucu Ortak & CTO",
-        "founder1Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        "founder2Role": "Kurucu Ortak & CEO",
-        "founder2Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+    "placeholders": {
+      "name": "örneğin: Can Akar",
+      "email": "örneğin: can@sirket.com",
+      "company": "örneğin: Teknoloji Çözümleri A.Ş.",
+      "message": "Dijital temellerinizi oluşturmanıza nasıl yardımcı olabiliriz?"
     },
-    "Projects": {
-        "title": "Ekosistemimiz",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat condimentum velit.",
-        "prificientDesc": "E-ticaret satıcıları (Shopify, Amazon, Trendyol, Etsy) için otomasyon, sipariş yönetimi ve detaylı kârlılık analizi sunan SaaS platformu.",
-        "prificientStatus": "Şu anda aktif geliştirme aşamasında ve dışarıya kapalı.",
-        "yuvaaDesc": "Duvar dekorasyonu, rölyef ve el sanatları (handmade art) üzerine odaklanan, estetik ve minimalizm sunan global e-ticaret markası.",
-        "dropsetupDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
-        "shopifyDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
-        "automationDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
+    "infoLabels": {
+      "email": "E-posta",
+      "linkedin": "Profesyonel",
+      "location": "Konum"
     },
-    "Contact": {
-        "title": "İletişime Geçin",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "nameLabel": "Adınız",
-        "emailLabel": "E-posta Adresiniz",
-        "messageLabel": "Mesajınız",
-        "submit": "Gönder"
+    "infoValues": {
+      "location": "Remote First / Türkiye"
     },
-    "Footer": {
-        "description": "Teknoloji, e-ticaret ve otomasyon çözümleriyle dijital geleceğinizi inşa ediyoruz.",
-        "rights": "Tüm hakları saklıdır."
+    "submit": "Mesaj Gönder",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Mesaj Alındı",
+    "successDescription": "Bize ulaştığınız için teşekkür ederiz. WeCaHan ekosisteminden bir ortak en kısa sürede sizinle iletişime geçecektir.",
+    "sendAnother": "Başka bir mesaj gönder",
+    "collaborationNote": "Her stratejik iş birliği, odaklanmış bir görüşme ile başlar. Teknik derinliğe ve operasyonel netliğe değer veriyoruz."
+  },
+  "ProjectsData": {
+    "aaa-automation": {
+      "name": "AAA Automation",
+      "category": "Otomasyon Portföyü",
+      "heroDescription": "Ölçeklenebilir operasyonel otomasyon sistemleri.",
+      "overviewTitle": "Operasyonel Netlik",
+      "overviewDescription": "AAA Automation, tekrarlayan operasyonel iş akışlarını tanımlamaya ve otomatikleştirmeye odaklanır. Manuel iş yükünü azaltan ve dijital ortamlarda uygulama hızını artıran sistemler inşa ediyoruz.",
+      "capabilitiesTitle": "Temel Sistemler",
+      "capabilities": [
+        "İş Akışı Otomasyon Mantığı",
+        "Eski Altyapı Köprüleri",
+        "Hata İzleme ve Yönetimi",
+        "Birleşik Operasyonel Paneller"
+      ],
+      "statusTitle": "Durum: Aktif",
+      "statusDescription": "Birden fazla ortamda aktif olarak yayında, kararlı otomasyon altyapısı sağlıyor.",
+      "connectionTitle": "WeCaHan Entegrasyonu",
+      "connectionDescription": "AAA Automation, karmaşık görevleri güvenilir otomatik süreçlere modüler hale getirerek WeCaHan ekosisteminin işlevsel katmanı olarak hizmet eder.",
+      "ctaTitle": "Otomasyonu Keşfedin",
+      "ctaLabel": "Detayları Görüntüle",
+      "wecahanProject": "Bir WeCaHan Girişimi"
+    },
+    "prificient": {
+      "name": "Prificient",
+      "category": "Finansal Zeka",
+      "heroDescription": "Dijital işletmeler için birleşik finansal görünürlük.",
+      "overviewTitle": "Finansal Zeka",
+      "overviewDescription": "Prificient; net marjlar, müşteri edinme maliyetleri ve operasyonel harcamaların konsolide bir görünümünü sunar. Parçalı finansal takibi mutlak netlikle değiştirmek için tasarlanmıştır.",
+      "capabilitiesTitle": "Zeka Katmanları",
+      "capabilities": [
+        "Gerçek Zamanlı Gelir Senkronizasyonu",
+        "Birleşik Harcama Görünürlüğü",
+        "Tahminli Marj Analizi",
+        "Otomatik Finansal Raporlar"
+      ],
+      "statusTitle": "Durum: Geliştirme Aşamasında",
+      "statusDescription": "Şu anda kontrollü bir inşa aşamasında; temel veri entegrasyonu ve tahmin mantığı kararlılığına odaklanıyor.",
+      "connectionTitle": "WeCaHan Entegrasyonu",
+      "connectionDescription": "Prificient, stratejik kararlar için gereken veriye dayalı netliği sağlayarak WeCaHan ekosisteminin zeka merkezi olarak görev yapar.",
+      "ctaTitle": "Proje Yol Haritası",
+      "ctaLabel": "Erken Erişim",
+      "wecahanProject": "Bir WeCaHan Girişimi"
+    },
+    "prificient-tools": {
+      "name": "Prificient Tools",
+      "category": "Yardımcı Çerçeve",
+      "heroDescription": "Finansal netlik için hassas mühendislikle üretilmiş araç seti.",
+      "overviewTitle": "Yardımcı Mühendislik",
+      "overviewDescription": "Hassas birim ekonomisi ve veri dönüşümleri için tasarlanmış özel mikro uygulama koleksiyonu. Günlük operasyonel doğruluk için üretilmiştir.",
+      "capabilitiesTitle": "Özel Araçlar",
+      "capabilities": [
+        "Birim Ekonomisi Motoru",
+        "Döviz Merkezi Otomasyonu",
+        "Veri Dönüşüm Araçları",
+        "Finansal Tahmin Modelleri"
+      ],
+      "statusTitle": "Durum: Aktif ve Genişleyen",
+      "statusDescription": "Operasyonel ihtiyaçlara göre yardımcı çerçeveye düzenli eklemeler yapılarak aktif olarak sürdürülüyor.",
+      "connectionTitle": "WeCaHan Entegrasyonu",
+      "connectionDescription": "Prificient Tools paketi, tüm WeCaHan ekosistemindeki hesaplamaları destekleyen granüler yapı taşlarını sağlar.",
+      "ctaTitle": "Araç Seti",
+      "ctaLabel": "Araçları Kullan",
+      "wecahanProject": "Bir WeCaHan Girişimi"
     }
+  },
+  "FocusAreasData": {
+    "automation-ai": {
+      "title": "Otomasyon & Yapay Zeka",
+      "description": "Tekrarlayan görevleri yöneten ve karar mekanizması sağlayan akıllı sistemler."
+    },
+    "infrastructure": {
+      "title": "Ölçeklenebilir Altyapı",
+      "description": "Yüksek performanslı yazılımlar için gereken temel dijital mimari tasarımı."
+    },
+    "financial-systems": {
+      "title": "Finansal Sistemler",
+      "description": "Karmaşık finansal veriler ve işletme metrikleri üzerinde netlik sağlayan araçlar."
+    },
+    "e-commerce": {
+      "title": "E-Ticaret Stratejisi",
+      "description": "Teknik hassasiyet ve stratejik otomasyon yoluyla dijital satış kanallarının optimizasyonu."
+    },
+    "product-strategy": {
+      "title": "Ürün Stratejisi",
+      "description": "Gerçek değer sağlayan sistemler inşa etmek için teknik uygulamayı pazar ihtiyaçlarıyla hizalamak."
+    },
+    "technical-consulting": {
+      "title": "Teknik Danışmanlık",
+      "description": "Karmaşık dijital dönüşümler için doğrudan mühendislik liderliği ve üst düzey strateji."
+    }
+  },
+  "FoundersData": {
+    "m-can-akar": {
+      "role": "Kurucu Ortak & Mühendislik Lideri",
+      "bio": "Teknik netlik ve ölçeklenebilir mimariye odaklı, ekosistemin mühendislik vizyonuna liderlik ediyor."
+    },
+    "hakan-asci": {
+      "role": "Kurucu Ortak & Ürün Stratejisti",
+      "bio": "Teknik uygulamayı pazar değeriyle hizalamaya ve ölçeklenen ürün mantığı tasarlamaya odaklı."
+    }
+  },
+  "Footer": {
+    "description": "Modern ekonomi için temel dijital sistemler ve akıllı otomasyonlar tasarlıyoruz.",
+    "explore": "Keşfet",
+    "ecosystem": "Ekosistem",
+    "compliance": "Uyumluluk",
+    "rights": "Tüm hakları saklıdır.",
+    "united": "Yenilikte Birlik."
+  }
 }

@@ -1,28 +1,29 @@
 import React from "react";
 import SectionShell from "@/components/layout/section-shell";
+import { useTranslations } from "next-intl";
 
 /**
  * ContactIntroBlock
- * Professional page header for the Contact page.
+ * Clean, professional header for the Contact page.
  */
 export default function ContactIntroBlock() {
+  const t = useTranslations("Contact");
+  const tNav = useTranslations("Navigation");
+
   return (
-    <SectionShell className="min-h-[40vh] flex flex-col justify-end">
-      <div className="max-w-4xl">
-        <div className="flex items-center space-x-2 mb-6 text-neutral-500 text-[10px] font-bold uppercase tracking-[0.2em]">
-          <span>Home</span>
-          <span className="text-white/20">/</span>
-          <span className="text-[#00f0ff]">Contact</span>
-        </div>
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-white uppercase leading-tight">
-          Contact <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30">
-            WeCaHan
+    <SectionShell className="pt-32 md:pt-48 pb-16 md:pb-24">
+      <div className="max-w-5xl">
+        <span className="text-neutral-500 text-[10px] font-bold tracking-[0.4em] uppercase mb-8 block">
+          {tNav("contact")}
+        </span>
+        <h1 className="text-5xl md:text-8xl font-bold tracking-tighter text-white uppercase leading-[0.85] max-w-4xl">
+          {tNav("contact")} <br />
+          <span className="text-neutral-500">
+            Us
           </span>
         </h1>
-        <p className="mt-8 text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-          For project inquiries, technical collaborations, or general ecosystem 
-          communication, reach out to us using the form below.
+        <p className="text-neutral-400 text-lg md:text-2xl mt-12 leading-relaxed max-w-3xl font-light">
+          {t("introDescription")}
         </p>
       </div>
     </SectionShell>

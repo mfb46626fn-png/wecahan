@@ -1,44 +1,245 @@
 {
-    "Navigation": {
-        "home": "Home",
-        "about": "About Us",
-        "projects": "Projects",
-        "contact": "Contact"
+  "Common": {
+    "viewDetails": "View Details",
+    "explore": "Explore",
+    "contact": "Contact Us",
+    "learnMore": "Learn More",
+    "foundations": "Foundations"
+  },
+  "Metadata": {
+    "title": "WeCaHan | Architecting the Future",
+    "description": "Architecting intelligent systems and scalable digital infrastructures for the modern economy."
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "Hero": {
+    "badge": "WeCaHan",
+    "titlePrefix": "Building Smart",
+    "titleGradient": "Digital Systems",
+    "description": "We architect scalable automation, AI-powered systems, and financial tools to build the future of digital infrastructure.",
+    "ctaPrimary": "Explore Projects",
+    "ctaSecondary": "About WeCaHan"
+  },
+  "SectionHeadings": {
+    "capabilities": "Capabilities",
+    "whatWeBuild": "What We Build",
+    "expertise": "Expertise",
+    "focusAreas": "Focus Areas",
+    "showcase": "Showcase",
+    "selectedProjects": "Selected Projects",
+    "leadership": "Leadership",
+    "founders": "Founders",
+    "strategy": "Strategy",
+    "visionMission": "Vision & Mission",
+    "philosophy": "Philosophy",
+    "getInTouch": "Get In Touch",
+    "whoWeAre": "Who We Are",
+    "howWeThink": "How We Think",
+    "initiatives": "Initiatives"
+  },
+  "Home": {
+    "capabilitiesDescription": "We focus on creating systems that provide long-term value and scalability.",
+    "aboutBadge": "About WeCaHan",
+    "aboutTitle": "Engineering Simplicity for the Digital Economy",
+    "aboutP1": "WeCaHan builds modern, scalable, and practical digital systems designed to thrive in the modern economy. Our focus is on removing complexity from operational workflows.",
+    "aboutP2": "By combining engineering excellence with a focus on real-world value, we ensure that every system we build serves as a long-term asset.",
+    "projectsDescription": "A list of intelligent systems and high-impact digital initiatives.",
+    "visionMission": "Vision & Mission",
+    "visionLabel": "Vision",
+    "missionLabel": "Mission",
+    "visionDescription": "To architect the foundational digital systems that power the next generation of the global economy, making complexity invisible through intelligent engineering.",
+    "missionDescription": "We build focused, scalable, and reliable software infrastructure and automated tools that enable businesses to execute with clarity and efficiency.",
+    "ctaTitle": "Ready to Build the Next Generation?",
+    "ctaDescription": "Let's discuss how WeCaHan can help architect your digital infrastructure and automate your core business systems."
+  },
+  "About": {
+    "introDescription": "A professional collective dedicated to architecting the foundational systems of the digital economy.",
+    "whoWeAreTitle": "Architecting the Future",
+    "whoWeAreP1": "WeCaHan is more than a software studio. It is an engineering collective focused on the intersection of automation, financial intelligence, and digital infrastructure.",
+    "whoWeAreP2": "Our mission is to build systems that are not just functional, but foundational—providing the clarity and scalability required to lead in a complex global market.",
+    "howWeThink1": "Simplicity",
+    "howWeThink1Desc": "We believe complexity is the enemy of execution. Our systems are built to be intuitive, clean, and highly effective.",
+    "howWeThink2": "Scalability",
+    "howWeThink2Desc": "Foundations must be strong. We architect every solution with tomorrow's growth in mind, using modern, robust stacks.",
+    "howWeThink3": "Execution",
+    "howWeThink3Desc": "Engineering is about results. We prioritize practical performance and real-world value over unnecessary abstraction.",
+    "philosophyDescription": "Our core principles drive every architectural decision we make.",
+    "whatWeBuildDetailDescription": "Our engineering focus spans across multiple disciplines of digital automation and infrastructure.",
+    "capabilitiesDetail": {
+      "automation": {
+        "title": "Automation Systems",
+        "items": ["Workflow Optimization", "Legacy System Integration", "Custom API Middleware"]
+      },
+      "infrastructure": {
+        "title": "Digital Infrastructure",
+        "items": ["Cloud Architecture", "Scalable Database Design", "System Reliability"]
+      },
+      "financial": {
+        "title": "Financial Intelligence",
+        "items": ["Cost Tracking Platforms", "Profit Visibility Tools", "Operational Analytics"]
+      },
+      "ecosystems": {
+        "title": "Product Ecosystems",
+        "items": ["Modular Software Design", "Unified Control Panels", "Scalable Extensions"]
+      }
     },
-    "Hero": {
-        "title1": "Automate the Ordinary",
-        "title2": "Unlock Creativity",
-        "subtitle": "Building intelligent systems and scalable e-commerce infrastructures. Architecting the future of digital commerce.",
-        "cta": "Explore Projects"
+    "foundersDescription": "Brand narrative takes priority over individuals, but our engineering roots remain firm.",
+    "foundersGridDescription": "Driven by specialized engineering focus and practical execution.",
+    "foundersNote": "* Founders focus solely on architectural oversight and specialized system design for the WeCaHan ecosystem.",
+    "closingTitle": "Building the foundation for focused Digital systems",
+    "closingDescription": "WeCaHan is building focused digital systems for a more efficient and scalable digital economy. Every line of code is an investment in stability and performance."
+  },
+  "Projects": {
+    "introDescription": "A focused collection of intelligent systems, financial tools, and digital infrastructure built within the WeCaHan ecosystem.",
+    "ecosystemNote": "Each project reflects a different layer of the broader WeCaHan product ecosystem.",
+    "ctaTitle": "Interested in what we are building?",
+    "ctaDescription": "We are always open to discussing new initiatives, technical architectures, and scalable digital systems."
+  },
+  "Contact": {
+    "introDescription": "For project inquiries, technical collaborations, or general ecosystem communication, reach out to us using the form below.",
+    "formBadge": "Project Inquiry",
+    "formTitle": "Send Us a Technical Brief",
+    "formDescription": "Whether it's a specific software architecture request or a strategic digital system build-out, our partners are ready to provide technical clarity.",
+    "labels": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company / Project",
+      "message": "Message"
     },
-    "About": {
-        "title": "About Us",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "founder1Role": "Co-Founder & CTO",
-        "founder1Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-        "founder2Role": "Co-Founder & CEO",
-        "founder2Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+    "placeholders": {
+      "name": "e.g. John Doe",
+      "email": "e.g. john@company.com",
+      "company": "e.g. Tech Solutions Inc.",
+      "message": "How can we help architect your digital foundations?"
     },
-    "Projects": {
-        "title": "Our Ecosystem",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat condimentum velit.",
-        "prificientDesc": "SaaS platform offering automation, order management, and detailed profitability analysis for e-commerce sellers.",
-        "prificientStatus": "In Active Development",
-        "yuvaaDesc": "Global e-commerce brand focusing on wall decor, relief, and handmade art, offering aesthetics and minimalism.",
-        "dropsetupDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
-        "shopifyDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
-        "automationDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
+    "infoLabels": {
+      "email": "Email",
+      "linkedin": "Professional",
+      "location": "Location"
     },
-    "Contact": {
-        "title": "Get in Touch",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "nameLabel": "Your Name",
-        "emailLabel": "Your Email",
-        "messageLabel": "Your Message",
-        "submit": "Send Message"
+    "infoValues": {
+      "location": "Remote First / Turkey"
     },
-    "Footer": {
-        "description": "Building your digital future with technology, e-commerce, and automation solutions.",
-        "rights": "All rights reserved."
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "successTitle": "Message Received",
+    "successDescription": "Thank you for reaching out. A partner from the WeCaHan ecosystem will contact you shortly.",
+    "sendAnother": "Send another message",
+    "collaborationNote": "Every strategic collaboration starts with a focused conversation. We value technical depth and operational clarity."
+  },
+  "ProjectsData": {
+    "aaa-automation": {
+      "name": "AAA Automation",
+      "category": "Automation Portfolio",
+      "heroDescription": "Scalable operational automation systems.",
+      "overviewTitle": "Operational Clarity",
+      "overviewDescription": "AAA Automation focuses on identifying and automating repetitive operational workflows. We build systems that reduce manual overhead and improve execution speed across digital environments.",
+      "capabilitiesTitle": "Core Systems",
+      "capabilities": [
+        "Workflow Automation Logic",
+        "Legacy Infrastructure Bridges",
+        "Error Monitoring & Handling",
+        "Unified Operational Panels"
+      ],
+      "statusTitle": "Status: Active",
+      "statusDescription": "Actively deployed across multiple environments, providing stable automation infrastructure.",
+      "connectionTitle": "WeCaHan Integration",
+      "connectionDescription": "AAA Automation serves as the functional layer of the WeCaHan ecosystem, modularizing complex tasks into reliable automated processes.",
+      "ctaTitle": "Explore Automation",
+      "ctaLabel": "View Details",
+      "wecahanProject": "A WeCaHan Initiative"
+    },
+    "prificient": {
+      "name": "Prificient",
+      "category": "Financial Intelligence",
+      "heroDescription": "Unified financial visibility for digital businesses.",
+      "overviewTitle": "Financial Intelligence",
+      "overviewDescription": "Prificient provides a consolidated view of net margins, customer acquisition costs, and operational spend. It is designed to replace fragmented financial tracking with absolute clarity.",
+      "capabilitiesTitle": "Intelligence Layers",
+      "capabilities": [
+        "Real-time Revenue Sync",
+        "Aggregated Spend Visibility",
+        "Predictive Margin Analysis",
+        "Automated Financial Reports"
+      ],
+      "statusTitle": "Status: In Development",
+      "statusDescription": "Currently in a controlled build phase, focusing on core data integration and predictive logic stability.",
+      "connectionTitle": "WeCaHan Integration",
+      "connectionDescription": "Prificient acts as the intelligence hub of the WeCaHan ecosystem, providing the data-driven clarity required for strategic decisions.",
+      "ctaTitle": "Project Roadmap",
+      "ctaLabel": "Early Access",
+      "wecahanProject": "A WeCaHan Initiative"
+    },
+    "prificient-tools": {
+      "name": "Prificient Tools",
+      "category": "Utility Framework",
+      "heroDescription": "Precision-engineered financial utility set.",
+      "overviewTitle": "Utility Engineering",
+      "overviewDescription": "A specialized collection of micro-applications designed for precise unit economics and data transformations. Built for daily operational accuracy.",
+      "capabilitiesTitle": "Specialized Tools",
+      "capabilities": [
+        "Unit Economics Engine",
+        "Currency Hub Automation",
+        "Data Transformation Tools",
+        "Financial Forecast Models"
+      ],
+      "statusTitle": "Status: Active & Expanding",
+      "statusDescription": "Actively maintained with regular additions to the utility framework based on operational needs.",
+      "connectionTitle": "WeCaHan Integration",
+      "connectionDescription": "The Prificient Tools suite provides the granular building blocks that support calculations across the entire WeCaHan ecosystem.",
+      "ctaTitle": "Utility Set",
+      "ctaLabel": "Use Tools",
+      "wecahanProject": "A WeCaHan Initiative"
     }
+  },
+  "FocusAreasData": {
+    "automation-ai": {
+      "title": "Automation & AI",
+      "description": "Intelligent systems that handle repetitive tasks and provide decision-making logic."
+    },
+    "infrastructure": {
+      "title": "Scalable Infrastructure",
+      "description": "Designing the underlying digital architecture required for high-performance software."
+    },
+    "financial-systems": {
+      "title": "Financial Systems",
+      "description": "Tools that provide clarity and visibility into complex financial data and business metrics."
+    },
+    "e-commerce": {
+      "title": "E-Commerce Strategy",
+      "description": "Optimizing digital sales channels through technical precision and strategic automation."
+    },
+    "product-strategy": {
+      "title": "Product Strategy",
+      "description": "Aligning technical execution with market needs to build systems that provide real value."
+    },
+    "technical-consulting": {
+      "title": "Technical Consulting",
+      "description": "Direct engineering leadership and high-level strategy for complex digital transformations."
+    }
+  },
+  "FoundersData": {
+    "m-can-akar": {
+      "role": "Co-Founder & Engineering Lead",
+      "bio": "Directed by a focus on technical clarity and scalable architecture, leading the engineering vision of the ecosystem."
+    },
+    "hakan-asci": {
+      "role": "Co-Founder & Product Strategist",
+      "bio": "Focused on aligning technical execution with market value and designing product logic that scales."
+    }
+  },
+  "Footer": {
+    "description": "Architecting foundational digital systems and intelligent automation for the modern economy.",
+    "explore": "Explore",
+    "ecosystem": "Ecosystem",
+    "compliance": "Compliance",
+    "rights": "All rights reserved.",
+    "united": "United in Innovation."
+  }
 }
