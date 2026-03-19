@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* Custom Futuristic Variables */
+  --color-neon-blue: #00f0ff;
+  --color-neon-purple: #b026ff;
+  --color-dark-surface: #0a0a0c;
+  --color-dark-border: rgba(255, 255, 255, 0.05);
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  body {
+    background-color: #000000;
+    /* Clean futuristic grid background */
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+/* Glassmorphism & Cyber/Futuristic Utils */
+@layer components {
+  .glass-panel {
+    background: rgba(10, 10, 12, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .glow-border {
+    position: relative;
+    border: 1px solid rgba(0, 240, 255, 0.15);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.03);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glow-border:hover {
+    border-color: rgba(0, 240, 255, 0.6);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.1), inset 0 0 10px rgba(0, 240, 255, 0.02);
+    transform: translateY(-2px);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+  }
+
+  /* Input Fields */
+  .futuristic-input {
+    @apply w-full bg-black/40 border border-white/5 rounded-none px-4 py-3 text-white placeholder-neutral-600 focus:outline-none focus:border-[#00f0ff]/50 transition-all;
+  }
+
+  .futuristic-btn {
+    @apply relative overflow-hidden bg-white text-black px-8 py-3 font-semibold tracking-wider uppercase text-sm transition-all;
+  }
+
+  .futuristic-btn:hover {
+    @apply bg-[#00f0ff] text-black;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.5);
+}
