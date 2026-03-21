@@ -17,22 +17,26 @@ interface ProjectPageProps {
 }
 
 export async function generateStaticParams() {
-  const allProjects = await getProjects();
   const locales = ["tr", "en"];
   
-  return locales.flatMap((locale) => 
-    allProjects.map((project) => ({
+  // Need to get projects for each locale to ensure all slugs are covered
+  // though slugs are currently identical.
+  const allParams = await Promise.all(locales.map(async (locale) => {
+    const allProjects = await getProjects(locale);
+    return allProjects.map((project) => ({
       locale,
       slug: project.slug,
-    }))
-  );
+    }));
+  }));
+  
+  return allParams.flat();
 }
 
 export async function generateMetadata({ 
   params 
 }: ProjectPageProps): Promise<Metadata> {
   const { locale, slug } = (await params) as { locale: "tr" | "en"; slug: string };
-  const project = await getProjectBySlug(slug);
+  const project = await getProjectBySlug(slug, locale);
   
   if (!project) return {};
 
@@ -44,7 +48,7 @@ export async function generateMetadata({
 
 export default async function ProjectDetailPage({ params }: ProjectPageProps) {
   const { locale, slug } = (await params) as { locale: "tr" | "en"; slug: string };
-  const project = await getProjectBySlug(slug);
+  const project = await getProjectBySlug(slug, locale);
 
   if (!project) {
     notFound();

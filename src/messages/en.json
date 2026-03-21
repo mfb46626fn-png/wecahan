@@ -7,8 +7,8 @@
     "foundations": "Foundations"
   },
   "Metadata": {
-    "title": "WeCaHan | Architecting the Future",
-    "description": "Architecting intelligent systems and scalable digital infrastructures for the modern economy."
+    "title": "WeCaHan | Digital Systems & Infrastructure",
+    "description": "Architecting focused digital systems and scalable infrastructures for the modern economy."
   },
   "Navigation": {
     "home": "Home",
@@ -20,9 +20,9 @@
   },
   "Hero": {
     "badge": "WeCaHan",
-    "titlePrefix": "Building Smart",
+    "titlePrefix": "Building",
     "titleGradient": "Digital Systems",
-    "description": "We architect scalable automation, AI-powered systems, and financial tools to build the future of digital infrastructure.",
+    "description": "We architect scalable automation, analytical systems, and financial tools to build robust digital infrastructure layers.",
     "ctaPrimary": "Explore Projects",
     "ctaSecondary": "About WeCaHan"
   },
@@ -60,9 +60,9 @@
   },
   "About": {
     "introDescription": "A professional collective dedicated to architecting the foundational systems of the digital economy.",
-    "whoWeAreTitle": "Architecting the Future",
-    "whoWeAreP1": "WeCaHan is more than a software studio. It is an engineering collective focused on the intersection of automation, financial intelligence, and digital infrastructure.",
-    "whoWeAreP2": "Our mission is to build systems that are not just functional, but foundational—providing the clarity and scalability required to lead in a complex global market.",
+    "whoWeAreTitle": "Building Digital Systems",
+    "whoWeAreP1": "WeCaHan is more than a software studio; it is an engineering collective focused on the intersection of automation, financial intelligence, and digital infrastructure.",
+    "whoWeAreP2": "Our mission is to build systems that are not just functional, but foundational—providing the operational clarity and scalability required in complex markets.",
     "howWeThink1": "Simplicity",
     "howWeThink1Desc": "We believe complexity is the enemy of execution. Our systems are built to be intuitive, clean, and highly effective.",
     "howWeThink2": "Scalability",
@@ -139,7 +139,7 @@
       "category": "Automation Portfolio",
       "heroDescription": "Scalable operational automation systems.",
       "overviewTitle": "Operational Clarity",
-      "overviewDescription": "AAA Automation focuses on identifying and automating repetitive operational workflows. We build systems that reduce manual overhead and improve execution speed across digital environments.",
+      "overviewDescription": "We CaHan Auto focuses on identifying and automating repetitive operational workflows. We build systems that reduce manual overhead and improve execution speed across digital environments.",
       "capabilitiesTitle": "Core Systems",
       "capabilities": [
         "Workflow Automation Logic",
@@ -150,7 +150,7 @@
       "statusTitle": "Status: Active",
       "statusDescription": "Actively deployed across multiple environments, providing stable automation infrastructure.",
       "connectionTitle": "WeCaHan Integration",
-      "connectionDescription": "AAA Automation serves as the functional layer of the WeCaHan ecosystem, modularizing complex tasks into reliable automated processes.",
+      "connectionDescription": "We CaHan Auto serves as the functional layer of the WeCaHan ecosystem, modularizing complex tasks into reliable automated processes.",
       "ctaTitle": "Explore Automation",
       "ctaLabel": "View Details",
       "wecahanProject": "A WeCaHan Initiative"
@@ -173,7 +173,7 @@
       "connectionTitle": "WeCaHan Integration",
       "connectionDescription": "Prificient acts as the intelligence hub of the WeCaHan ecosystem, providing the data-driven clarity required for strategic decisions.",
       "ctaTitle": "Project Roadmap",
-      "ctaLabel": "Early Access",
+      "ctaLabel": "View Details",
       "wecahanProject": "A WeCaHan Initiative"
     },
     "prificient-tools": {

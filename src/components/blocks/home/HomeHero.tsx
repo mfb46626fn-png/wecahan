@@ -36,11 +36,11 @@ export default function HomeHero({ locale }: HomeHeroProps) {
             {content.description[locale]}
           </p>
           
-          <div className="flex flex-wrap gap-4">
-            <Link href={content.ctaPrimary.href} className="btn-primary min-w-[200px]">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href={content.ctaPrimary.href} className="btn-primary w-full sm:w-[200px]">
               {content.ctaPrimary[locale]}
             </Link>
-            <Link href={content.ctaSecondary.href} className="btn-secondary min-w-[200px]">
+            <Link href={content.ctaSecondary.href} className="btn-secondary w-full sm:w-[200px]">
               {content.ctaSecondary[locale]}
             </Link>
           </div>

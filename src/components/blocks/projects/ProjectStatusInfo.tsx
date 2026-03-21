@@ -10,7 +10,7 @@ interface ProjectStatusInfoProps {
 
 export default function ProjectStatusInfo({ project, locale }: ProjectStatusInfoProps) {
   return (
-    <Section background="base">
+    <Section background="base" size="medium">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
         <div>
           <h2 className="text-3xl font-bold mb-8 font-display">{project.statusTitle}</h2>

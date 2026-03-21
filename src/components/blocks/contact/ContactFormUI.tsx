@@ -67,42 +67,47 @@ export default function ContactFormUI({ locale }: ContactFormUIProps) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-2">
-                <label className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
+                <label htmlFor="name" className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
                   {fields.name[locale]}
                 </label>
                 <input 
+                  id="name"
                   name="name"
                   type="text" 
                   placeholder={fields.name.placeholder[locale]}
                   className={`w-full bg-background border rounded-lg p-4 text-text-primary focus:outline-none focus:border-brand-accent transition-colors ${state.fieldErrors?.name ? 'border-red-500/50' : 'border-border-card'}`}
                   disabled={isPending}
+                  aria-describedby={state.fieldErrors?.name ? "name-error" : undefined}
                 />
                 {state.fieldErrors?.name && (
-                  <p className="text-[10px] text-red-500 mt-1">{state.fieldErrors.name[0]}</p>
+                  <p id="name-error" className="text-[10px] text-red-500 mt-1">{state.fieldErrors.name[0]}</p>
                 )}
               </div>
               <div className="space-y-2">
-                <label className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
+                <label htmlFor="email" className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
                   {fields.email[locale]}
                 </label>
                 <input 
+                  id="email"
                   name="email"
                   type="email" 
                   placeholder={fields.email.placeholder[locale]}
                   className={`w-full bg-background border rounded-lg p-4 text-text-primary focus:outline-none focus:border-brand-accent transition-colors ${state.fieldErrors?.email ? 'border-red-500/50' : 'border-border-card'}`}
                   disabled={isPending}
+                  aria-describedby={state.fieldErrors?.email ? "email-error" : undefined}
                 />
                 {state.fieldErrors?.email && (
-                  <p className="text-[10px] text-red-500 mt-1">{state.fieldErrors.email[0]}</p>
+                  <p id="email-error" className="text-[10px] text-red-500 mt-1">{state.fieldErrors.email[0]}</p>
                 )}
               </div>
             </div>
 
             <div className="space-y-2">
-              <label className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
+              <label htmlFor="company" className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
                 {fields.company[locale]}
               </label>
               <input 
+                id="company"
                 name="company"
                 type="text" 
                 placeholder={fields.company.placeholder[locale]}
@@ -112,18 +117,20 @@ export default function ContactFormUI({ locale }: ContactFormUIProps) {
             </div>
 
             <div className="space-y-2">
-              <label className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
+              <label htmlFor="message" className="text-[10px] font-bold uppercase tracking-widest text-text-muted">
                 {fields.message[locale]}
               </label>
               <textarea 
+                id="message"
                 name="message"
                 rows={5}
                 placeholder={fields.message.placeholder[locale]}
                 className={`w-full bg-background border rounded-lg p-4 text-text-primary focus:outline-none focus:border-brand-accent transition-colors resize-none ${state.fieldErrors?.message ? 'border-red-500/50' : 'border-border-card'}`}
                 disabled={isPending}
+                aria-describedby={state.fieldErrors?.message ? "message-error" : undefined}
               />
               {state.fieldErrors?.message && (
-                <p className="text-[10px] text-red-500 mt-1">{state.fieldErrors.message[0]}</p>
+                <p id="message-error" className="text-[10px] text-red-500 mt-1">{state.fieldErrors.message[0]}</p>
               )}
             </div>
 

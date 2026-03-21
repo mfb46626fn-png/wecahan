@@ -1,6 +1,6 @@
 import { LocalizedText } from './content';
 
-export type ProjectStatus = 'active' | 'in-development' | 'maintenance' | 'archived';
+export type ProjectStatus = 'active' | 'in-development' | 'maintenance' | 'archived' | 'active-and-expanding';
 
 export interface ProjectData {
   slug: string;

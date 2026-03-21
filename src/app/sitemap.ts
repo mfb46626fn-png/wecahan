@@ -5,7 +5,6 @@ import { getProjects } from '@/lib/content/projects';
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.baseUrl;
   const locales = siteConfig.locales as ("tr" | "en")[];
-  const projects = await getProjects();
 
   const staticPages = [
     '',
@@ -32,6 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Project Detail Pages for all locales
   for (const locale of locales) {
+    const projects = await getProjects(locale);
     for (const project of projects) {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}/projects/${project.slug}`,

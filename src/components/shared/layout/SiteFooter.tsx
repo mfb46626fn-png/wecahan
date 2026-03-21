@@ -16,9 +16,9 @@ export default function SiteFooter() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
         
         {/* Brand Section */}
-        <div className="flex flex-col space-y-8">
-          <Link href="/" className="group flex items-center space-x-3">
-             <div className="w-8 h-[2px] bg-brand-accent" />
+        <div className="flex flex-col space-y-8 md:col-span-1">
+          <Link href="/" className="group flex items-center space-x-3" aria-label="WeCaHan Home">
+             <div className="w-8 h-[2px] bg-brand-accent transition-all duration-300 group-hover:w-12" />
             <span className="text-xl font-bold tracking-tighter uppercase text-text-primary font-display">
               WeCaHan
             </span>

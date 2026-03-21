@@ -10,10 +10,15 @@ interface ProjectStatusBadgeProps {
 }
 
 export default function ProjectStatusBadge({ status, tr, en, locale }: ProjectStatusBadgeProps) {
-  const label = locale === 'tr' ? (tr || (status === 'active' ? 'Aktif' : 'Geliştirme Aşamasında')) : (en || (status === 'active' ? 'Active' : 'In Development'));
+  const isCurrentlyActive = status === 'active' || status === 'active-and-expanding';
+  
+  const label = locale === 'tr' 
+    ? (tr || (isCurrentlyActive ? 'Aktif' : 'Geliştirme Aşamasında')) 
+    : (en || (isCurrentlyActive ? 'Active' : 'In Development'));
   
   const statusClasses: Record<ProjectStatus, string> = {
     active: 'text-brand-accent border-brand-accent/20 bg-brand-accent/5',
+    'active-and-expanding': 'text-brand-accent border-brand-accent/20 bg-brand-accent/5',
     'in-development': 'text-text-secondary border-border-card bg-white/5',
     maintenance: 'text-text-muted border-border-subtle bg-transparent',
     archived: 'text-text-muted border-border-subtle bg-transparent'
@@ -26,7 +31,7 @@ export default function ProjectStatusBadge({ status, tr, en, locale }: ProjectSt
     )}>
       <span className={twMerge(
         "w-1 h-1 rounded-full mr-2",
-        status === 'active' ? "bg-brand-accent animate-pulse" : "bg-text-secondary"
+        isCurrentlyActive ? "bg-brand-accent animate-pulse" : "bg-text-secondary"
       )} />
       {label}
     </span>

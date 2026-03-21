@@ -14,7 +14,7 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = (await params) as { locale: "tr" | "en" };
-  const projects = await getProjects();
+  const projects = await getProjects(locale);
   
   // Show only top 3 projects on home
   const selectedProjects = projects.slice(0, 3);

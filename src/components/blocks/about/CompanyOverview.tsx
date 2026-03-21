@@ -10,7 +10,7 @@ export default function CompanyOverview({ locale }: CompanyOverviewProps) {
   const content = aboutContent.overview;
 
   return (
-    <Section background="base">
+    <Section background="base" size="medium">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">

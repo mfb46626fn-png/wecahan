@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Section';
+import { Link } from '@/i18n/routing';
 
 interface CTASectionProps {
   title: string;
@@ -28,9 +29,9 @@ export default function CTASection({
         <p className="text-lg text-text-secondary mb-10">
           {description}
         </p>
-        <a href={ctaHref} className="btn-primary">
+        <Link href={ctaHref} className="btn-primary">
           {ctaLabel}
-        </a>
+        </Link>
       </div>
     </Section>
   );

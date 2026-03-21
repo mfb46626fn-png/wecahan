@@ -7,8 +7,8 @@
     "foundations": "Temeller"
   },
   "Metadata": {
-    "title": "WeCaHan | Geleceği İnşa Ediyoruz",
-    "description": "Modern ekonomi için akıllı sistemler ve ölçeklenebilir dijital altyapılar tasarlıyoruz."
+    "title": "WeCaHan | Dijital Sistemler ve Altyapı",
+    "description": "Modern ekonomi için mimari odaklı dijital sistemler ve ölçeklenebilir altyapılar."
   },
   "Navigation": {
     "home": "Anasayfa",
@@ -20,9 +20,9 @@
   },
   "Hero": {
     "badge": "WeCaHan",
-    "titlePrefix": "Akıllı Dijital",
-    "titleGradient": "Sistemler İnşa Ediyoruz",
-    "description": "Ölçeklenebilir otomasyonlar, yapay zeka destekli sistemler ve finansal araçlar ile dijital altyapının geleceğini tasarlıyoruz.",
+    "titlePrefix": "Dijital",
+    "titleGradient": "Sistemler Mimari Ediyoruz",
+    "description": "Ölçeklenebilir otomasyonlar, analiz sistemleri ve finansal araçlar ile dijital altyapı katmanları inşa ediyoruz.",
     "ctaPrimary": "Projeleri Keşfet",
     "ctaSecondary": "WeCaHan Hakkında"
   },
@@ -59,9 +59,9 @@
   },
   "About": {
     "introDescription": "Dijital ekonominin temel sistemlerini kurgulamaya adanmış profesyonel bir mühendislik kolektifi.",
-    "whoWeAreTitle": "Geleceği İnşa Etmek",
-    "whoWeAreP1": "WeCaHan bir yazılım stüdyosundan daha fazlasıdır. Otomasyon, finansal zeka ve dijital altyapının kesişimine odaklanmış bir mühendislik kolektifidir.",
-    "whoWeAreP2": "Misyonumuz, sadece işlevsel değil, aynı zamanda temel teşkil eden sistemler inşa etmektir; karmaşık küresel pazarda liderlik etmek için gereken netliği ve ölçeklenebilirliği sağlıyoruz.",
+    "whoWeAreTitle": "Dijital Sistemler İnşa Etmek",
+    "whoWeAreP1": "WeCaHan bir yazılım stüdyosundan daha fazlasıdır; otomasyon, finansal zeka ve dijital altyapı kesişimine odaklanmış bir mühendislik kolektifidir.",
+    "whoWeAreP2": "Misyonumuz, sadece işlevsel değil, aynı zamanda temel teşkil eden yapılar inşa etmektir; karmaşık pazar koşullarında operasyonel netlik ve ölçeklenebilirlik sağlıyoruz.",
     "howWeThink1": "Yalınlık",
     "howWeThink1Desc": "Karmaşıklığın uygulamanın düşmanı olduğuna inanıyoruz. Sistemlerimiz sezgisel, temiz ve son derece etkili olacak şekilde inşa edilir.",
     "howWeThink2": "Ölçeklenebilirlik",
@@ -138,7 +138,7 @@
       "category": "Otomasyon Portföyü",
       "heroDescription": "Ölçeklenebilir operasyonel otomasyon sistemleri.",
       "overviewTitle": "Operasyonel Netlik",
-      "overviewDescription": "AAA Automation, tekrarlayan operasyonel iş akışlarını tanımlamaya ve otomatikleştirmeye odaklanır. Manuel iş yükünü azaltan ve dijital ortamlarda uygulama hızını artıran sistemler inşa ediyoruz.",
+      "overviewDescription": "We CaHan Auto, tekrarlayan operasyonel iş akışlarını tanımlamaya ve otomatikleştirmeye odaklanır. Manuel iş yükünü azaltan ve dijital ortamlarda uygulama hızını artıran sistemler inşa ediyoruz.",
       "capabilitiesTitle": "Temel Sistemler",
       "capabilities": [
         "İş Akışı Otomasyon Mantığı",
@@ -149,7 +149,7 @@
       "statusTitle": "Durum: Aktif",
       "statusDescription": "Birden fazla ortamda aktif olarak yayında, kararlı otomasyon altyapısı sağlıyor.",
       "connectionTitle": "WeCaHan Entegrasyonu",
-      "connectionDescription": "AAA Automation, karmaşık görevleri güvenilir otomatik süreçlere modüler hale getirerek WeCaHan ekosisteminin işlevsel katmanı olarak hizmet eder.",
+      "connectionDescription": "We CaHan Auto, karmaşık görevleri güvenilir otomatik süreçlere modüler hale getirerek WeCaHan ekosisteminin işlevsel katmanı olarak hizmet eder.",
       "ctaTitle": "Otomasyonu Keşfedin",
       "ctaLabel": "Detayları Görüntüle",
       "wecahanProject": "Bir WeCaHan Girişimi"
@@ -172,7 +172,7 @@
       "connectionTitle": "WeCaHan Entegrasyonu",
       "connectionDescription": "Prificient, stratejik kararlar için gereken veriye dayalı netliği sağlayarak WeCaHan ekosisteminin zeka merkezi olarak görev yapar.",
       "ctaTitle": "Proje Yol Haritası",
-      "ctaLabel": "Erken Erişim",
+      "ctaLabel": "Detayları Gör",
       "wecahanProject": "Bir WeCaHan Girişimi"
     },
     "prificient-tools": {

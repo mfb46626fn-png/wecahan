@@ -39,7 +39,7 @@ export default function PageHero({
         <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
           {description}
         </p>
-        {children && <div className="mt-10 flex flex-wrap gap-4 items-center justify-center">{children}</div>}
+        {children && <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center">{children}</div>}
       </div>
     </section>
   );

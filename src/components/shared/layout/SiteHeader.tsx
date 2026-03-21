@@ -16,6 +16,17 @@ export default function SiteHeader() {
   const t = useTranslations("Navigation");
 
   useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -32,7 +43,7 @@ export default function SiteHeader() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex justify-between items-center">
-        <Link href="/" className="group flex items-center space-x-3">
+        <Link href="/" className="group flex items-center space-x-3" aria-label="WeCaHan Home">
           <div className="w-8 h-[2px] bg-brand-accent transition-all duration-300 group-hover:w-12" />
           <span className="text-xl font-bold tracking-tighter uppercase text-text-primary font-display">
             WeCaHan

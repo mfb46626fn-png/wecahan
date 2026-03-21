@@ -28,7 +28,7 @@ export default async function ProjectsPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = (await params) as { locale: "tr" | "en" };
-  const projects = await getProjects();
+  const projects = await getProjects(locale);
   const content = projectsPageContent;
 
   const projectsSchema = {
