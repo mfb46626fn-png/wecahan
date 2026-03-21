@@ -22,9 +22,9 @@ export default function SiteFooter() {
              <Image 
               src="/logo.png" 
               alt="WeCaHan" 
-              width={180} 
-              height={44} 
-              className="h-11 w-auto opacity-80 group-hover:opacity-100 transition-opacity" 
+              width={220} 
+              height={56} 
+              className="h-14 w-auto opacity-80 group-hover:opacity-100 transition-opacity" 
             />
           </Link>
           <p className="text-text-secondary text-sm leading-relaxed max-w-xs font-light">
