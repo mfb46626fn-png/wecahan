@@ -37,20 +37,19 @@ export default function SiteHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        isScrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
           ? "bg-background/80 backdrop-blur-lg py-4 border-b border-border-subtle"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex justify-between items-center">
         <Link href="/" className="group flex items-center" aria-label="WeCaHan Home">
-          <Image 
-            src="/logo.png" 
-            alt="WeCaHan" 
-            width={160} 
-            height={40} 
-            className="h-7 md:h-9 w-auto" 
+          <Image
+            src="/logo.png"
+            alt="WeCaHan"
+            width={180}
+            height={44}
+            className="h-11 w-auto"
             priority
           />
         </Link>
@@ -64,9 +63,8 @@ export default function SiteHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[10px] font-bold tracking-[0.2em] uppercase transition-all duration-300 hover:text-brand-accent ${
-                    isActive ? "text-brand-accent" : "text-text-secondary"
-                  }`}
+                  className={`text-[10px] font-bold tracking-[0.2em] uppercase transition-all duration-300 hover:text-brand-accent ${isActive ? "text-brand-accent" : "text-text-secondary"
+                    }`}
                 >
                   {t(item.label)}
                 </Link>
@@ -106,9 +104,8 @@ export default function SiteHeader() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-xl font-bold tracking-widest uppercase transition-colors font-display ${
-                      isActive ? "text-brand-accent" : "text-text-secondary"
-                    }`}
+                    className={`text-xl font-bold tracking-widest uppercase transition-colors font-display ${isActive ? "text-brand-accent" : "text-text-secondary"
+                      }`}
                   >
                     {t(item.label)}
                   </Link>
