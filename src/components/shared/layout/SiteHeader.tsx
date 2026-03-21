@@ -48,9 +48,9 @@ export default function SiteHeader() {
           <Image 
             src="/logo.png" 
             alt="WeCaHan" 
-            width={160} 
-            height={32} 
-            className="h-7 md:h-8 w-auto object-contain" 
+            width={200} 
+            height={48} 
+            className="h-10 md:h-12 w-auto object-contain" 
             priority
           />
         </Link>
