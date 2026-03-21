@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Link } from "@/i18n/routing";
 import { mainNavigation } from "@/data/site/navigation";
@@ -44,10 +45,15 @@ export default function SiteHeader() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex justify-between items-center">
         <Link href="/" className="group flex items-center space-x-3" aria-label="WeCaHan Home">
-          <div className="w-8 h-[2px] bg-brand-accent transition-all duration-300 group-hover:w-12" />
-          <span className="text-xl font-bold tracking-tighter uppercase text-text-primary font-display">
-            WeCaHan
-          </span>
+          <div className="w-8 h-[2px] bg-brand-accent" />
+          <Image 
+            src="/logo.png" 
+            alt="WeCaHan" 
+            width={120} 
+            height={24} 
+            className="h-5 w-auto" 
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

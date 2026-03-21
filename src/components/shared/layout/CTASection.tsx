@@ -19,9 +19,6 @@ export default function CTASection({
 }: CTASectionProps) {
   return (
     <Section background={background} className="text-center overflow-hidden">
-      {/* Decorative gradient */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(0,180,216,0.05)_0%,transparent_70%)] pointer-events-none" />
-      
       <div className="max-w-3xl mx-auto relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-6">
           {title}

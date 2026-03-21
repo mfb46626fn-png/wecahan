@@ -39,7 +39,7 @@ export default function FoundersSnapshot({ locale }: FoundersSnapshotProps) {
                     href={founder.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-text-muted hover:text-brand-accent transition-colors"
+                    className="text-text-muted hover:text-text-primary transition-colors"
                   >
                     <Linkedin className="w-5 h-5" />
                   </a>

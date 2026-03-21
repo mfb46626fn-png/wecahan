@@ -60,17 +60,17 @@
 
   /* Premium Card (docs/05-design-system/visual-direction.md) */
   .premium-card {
-    @apply bg-surface border border-border-card rounded-lg p-8 transition-all duration-300 hover:border-brand-accent/30;
+    @apply bg-surface border border-border-card rounded-lg p-8 transition-all duration-300 hover:bg-white/[0.02];
   }
 
   /* Brand Primary Button */
   .btn-primary {
-    @apply bg-brand-accent text-background px-8 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-brand-accent-hover active:scale-[0.98] inline-flex items-center justify-center;
+    @apply bg-brand-accent text-background px-8 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-brand-accent-hover inline-flex items-center justify-center;
   }
 
   /* Brand Secondary Button */
   .btn-secondary {
-    @apply bg-transparent text-text-primary border border-border-card px-8 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-white/5 active:scale-[0.98] inline-flex items-center justify-center;
+    @apply bg-transparent text-text-primary border border-border-card px-8 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-white/5 inline-flex items-center justify-center;
   }
 }
 

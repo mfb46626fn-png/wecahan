@@ -31,7 +31,7 @@ export default function CapabilityGrid({ locale }: CapabilityGridProps) {
           const Icon = icons[item.id as keyof typeof icons] || Layout;
           return (
             <div key={item.id} className="premium-card group">
-              <div className="w-12 h-12 rounded-lg bg-background border border-border-subtle flex items-center justify-center mb-6 transition-all duration-300 group-hover:border-brand-accent/30 group-hover:bg-brand-accent/5">
+              <div className="w-12 h-12 rounded-lg bg-background border border-border-subtle flex items-center justify-center mb-6 transition-all duration-300">
                 <Icon className="w-6 h-6 text-brand-accent" />
               </div>
               <h3 className="text-xl font-bold mb-4">{item.title[locale]}</h3>

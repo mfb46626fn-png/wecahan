@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { footerData } from "@/data/site/footer";
 import { useTranslations } from "next-intl";
@@ -18,10 +19,14 @@ export default function SiteFooter() {
         {/* Brand Section */}
         <div className="flex flex-col space-y-8 md:col-span-1">
           <Link href="/" className="group flex items-center space-x-3" aria-label="WeCaHan Home">
-             <div className="w-8 h-[2px] bg-brand-accent transition-all duration-300 group-hover:w-12" />
-            <span className="text-xl font-bold tracking-tighter uppercase text-text-primary font-display">
-              WeCaHan
-            </span>
+             <div className="w-8 h-[2px] bg-brand-accent" />
+             <Image 
+              src="/logo.png" 
+              alt="WeCaHan" 
+              width={120} 
+              height={24} 
+              className="h-5 w-auto opacity-80 group-hover:opacity-100 transition-opacity" 
+            />
           </Link>
           <p className="text-text-secondary text-sm leading-relaxed max-w-xs font-light">
             {t("description")}
@@ -41,7 +46,7 @@ export default function SiteFooter() {
                 
                 return (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-text-secondary hover:text-brand-accent transition-colors text-[10px] uppercase font-bold tracking-[0.2em]">
+                    <Link href={link.href} className="text-text-secondary hover:text-text-primary transition-colors text-[10px] uppercase font-bold tracking-[0.2em]">
                        {label || link.label}
                     </Link>
                   </li>

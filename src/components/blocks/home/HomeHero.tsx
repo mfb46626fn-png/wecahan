@@ -16,15 +16,15 @@ export default function HomeHero({ locale }: HomeHeroProps) {
     <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_40%,rgba(0,180,216,0.05)_0%,transparent_60%)]" />
-        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_50%_40%,rgba(0,180,216,0.02)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-[0.4]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative z-10 w-full">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
         >
           <span className="inline-block text-brand-accent text-xs font-bold tracking-[0.3em] uppercase mb-6">
             {content.badge}
@@ -46,16 +46,6 @@ export default function HomeHero({ locale }: HomeHeroProps) {
           </div>
         </motion.div>
       </div>
-
-      {/* Subtle indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block"
-      >
-        <div className="w-[1px] h-12 bg-gradient-to-b from-brand-accent to-transparent" />
-      </motion.div>
     </section>
   );
 }

@@ -12,8 +12,8 @@ export default function ProjectBrandConnection({ project, locale }: ProjectBrand
   return (
     <Section background="surface" className="border-t border-border-subtle" size="medium">
       <div className="flex items-start gap-4 p-8 rounded-xl bg-background border border-border-card">
-        <div className="w-10 h-10 rounded-full bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
-          <Share2 className="w-5 h-5 text-brand-accent" />
+        <div className="w-10 h-10 rounded-full bg-surface border border-border-card flex items-center justify-center flex-shrink-0 mt-1">
+          <Share2 className="w-5 h-5 text-text-muted" />
         </div>
         <div>
           <h3 className="text-xl font-bold mb-4 font-display">

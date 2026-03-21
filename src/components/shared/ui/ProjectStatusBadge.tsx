@@ -31,7 +31,7 @@ export default function ProjectStatusBadge({ status, tr, en, locale }: ProjectSt
     )}>
       <span className={twMerge(
         "w-1 h-1 rounded-full mr-2",
-        isCurrentlyActive ? "bg-brand-accent animate-pulse" : "bg-text-secondary"
+        isCurrentlyActive ? "bg-brand-accent" : "bg-text-secondary"
       )} />
       {label}
     </span>
