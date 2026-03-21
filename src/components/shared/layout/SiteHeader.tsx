@@ -44,14 +44,13 @@ export default function SiteHeader() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex justify-between items-center">
-        <Link href="/" className="group flex items-center space-x-3" aria-label="WeCaHan Home">
-          <div className="w-8 h-[2px] bg-brand-accent" />
+        <Link href="/" className="group flex items-center" aria-label="WeCaHan Home">
           <Image 
             src="/logo.png" 
             alt="WeCaHan" 
-            width={120} 
-            height={24} 
-            className="h-5 w-auto" 
+            width={160} 
+            height={32} 
+            className="h-8 md:h-9 w-auto object-contain" 
             priority
           />
         </Link>

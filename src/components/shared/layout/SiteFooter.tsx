@@ -18,14 +18,13 @@ export default function SiteFooter() {
         
         {/* Brand Section */}
         <div className="flex flex-col space-y-8 md:col-span-1">
-          <Link href="/" className="group flex items-center space-x-3" aria-label="WeCaHan Home">
-             <div className="w-8 h-[2px] bg-brand-accent" />
+          <Link href="/" className="group flex items-center" aria-label="WeCaHan Home">
              <Image 
               src="/logo.png" 
               alt="WeCaHan" 
-              width={120} 
-              height={24} 
-              className="h-5 w-auto opacity-80 group-hover:opacity-100 transition-opacity" 
+              width={160} 
+              height={32} 
+              className="h-8 w-auto opacity-80 group-hover:opacity-100 transition-opacity object-contain" 
             />
           </Link>
           <p className="text-text-secondary text-sm leading-relaxed max-w-xs font-light">
