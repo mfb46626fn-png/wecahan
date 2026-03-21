@@ -1,22 +1,27 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #000000;
-  --color-foreground: #ffffff;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: #050505;
+  --color-foreground: #f8f8f8;
   
-  /* Modern Tech Color Palette - Muted & Premium */
-  --color-brand-blue: #0070f3;
-  --color-brand-accent: #00d4ff;
-  --color-dark-surface: #0a0a0c;
-  --color-dark-border: rgba(255, 255, 255, 0.08);
-  --color-muted-foreground: #888888;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  
+  /* Brand Palette - docs/05-design-system/color-typography-system.md */
+  --color-brand-accent: #00b4d8; /* Turquoise / Teal */
+  --color-brand-accent-hover: #0096c7;
+  --color-surface: #0a0a0a;
+  --color-surface-lighter: #121212;
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+  --color-border-card: rgba(255, 255, 255, 0.08);
+  --color-text-primary: #f8f8f8;
+  --color-text-secondary: #a0a0a0;
+  --color-text-muted: #666666;
 }
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #050505;
+  --foreground: #f8f8f8;
   color-scheme: dark;
 }
 
@@ -25,41 +30,47 @@
     scroll-behavior: smooth;
     background-color: var(--background);
     color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    background-color: #000000;
-    /* subtle radial gradient for depth instead of grid */
-    background-image: 
-      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
-    background-attachment: fixed;
-    min-height: 100vh;
+    background-color: var(--background);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+  }
+
+  p {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--color-text-secondary);
   }
 }
 
 @layer components {
-  /* Clean Surface / Minimal Glass */
-  .glass-panel {
-    background: rgba(10, 10, 12, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    transition: border-color 0.3s ease, background 0.3s ease;
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20 md:py-32;
   }
 
-  /* Clean Input Fields */
-  .futuristic-input {
-    @apply w-full bg-neutral-900 border border-white/10 rounded-sm px-4 py-3 text-white placeholder-neutral-700 focus:outline-none focus:border-white/30 transition-all;
+  /* Premium Card (docs/05-design-system/visual-direction.md) */
+  .premium-card {
+    @apply bg-surface border border-border-card rounded-lg p-8 transition-all duration-300 hover:border-brand-accent/30;
   }
 
-  /* Premium Modern Button */
-  .futuristic-btn {
-    @apply relative overflow-hidden bg-white text-black px-10 py-3 font-bold tracking-[0.2em] uppercase text-xs transition-all duration-300;
+  /* Brand Primary Button */
+  .btn-primary {
+    @apply bg-brand-accent text-background px-8 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-brand-accent-hover active:scale-[0.98] inline-flex items-center justify-center;
   }
 
-  .futuristic-btn:hover {
-    @apply bg-neutral-200 text-black;
-    transform: translateY(-1px);
+  /* Brand Secondary Button */
+  .btn-secondary {
+    @apply bg-transparent text-text-primary border border-border-card px-8 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-white/5 active:scale-[0.98] inline-flex items-center justify-center;
   }
 }
 
