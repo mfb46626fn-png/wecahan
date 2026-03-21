@@ -20,7 +20,7 @@ export default function SiteFooter() {
         <div className="flex flex-col space-y-8 md:col-span-1">
           <Link href="/" className="group flex items-center" aria-label="WeCaHan Home">
              <Image 
-              src="/logo.png" 
+              src="/wecahan-logo.png" 
               alt="WeCaHan" 
               width={220} 
               height={56} 

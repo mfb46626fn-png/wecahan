@@ -45,7 +45,7 @@ export default function SiteHeader() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex justify-between items-center">
         <Link href="/" className="group flex items-center" aria-label="WeCaHan Home">
           <Image
-            src="/logo.png"
+            src="/wecahan-logo.png"
             alt="WeCaHan"
             width={138}
             height={40}
