@@ -50,7 +50,7 @@ export default function SiteHeader() {
             alt="WeCaHan" 
             width={160} 
             height={32} 
-            className="h-8 md:h-9 w-auto object-contain" 
+            className="h-7 md:h-8 w-auto object-contain" 
             priority
           />
         </Link>
