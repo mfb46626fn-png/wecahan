@@ -49,7 +49,6 @@ export default async function AboutPage({
         badge={hero.badge}
         title={hero.title[locale]}
         description={hero.description[locale]}
-        centered
       />
       <CompanyOverview locale={locale} />
       <VisionMission locale={locale} />

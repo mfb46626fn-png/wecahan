@@ -20,23 +20,23 @@ export default function HomeHero({ locale }: HomeHeroProps) {
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-[0.4]" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative z-10 w-full text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block text-brand-accent text-xs font-bold tracking-[0.3em] uppercase mb-6">
+          <span className="inline-block text-brand-accent text-xs font-bold tracking-[0.3em] uppercase mb-6 mx-auto">
             {content.badge}
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 max-w-5xl leading-[1.05] tracking-tight font-display">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 max-w-5xl leading-[1.05] tracking-tight font-display mx-auto">
             {content.title[locale]}
           </h1>
-          <p className="text-lg md:text-xl text-text-secondary max-w-2xl mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-text-secondary max-w-2xl mb-12 leading-relaxed mx-auto">
             {content.description[locale]}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href={content.ctaPrimary.href} className="btn-primary w-full sm:w-[200px]">
               {content.ctaPrimary[locale]}
             </Link>

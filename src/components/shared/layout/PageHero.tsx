@@ -15,7 +15,7 @@ export default function PageHero({
   title, 
   description, 
   children,
-  centered = false
+  centered = true
 }: PageHeroProps) {
   return (
     <section 

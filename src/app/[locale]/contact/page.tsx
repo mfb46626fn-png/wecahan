@@ -38,10 +38,9 @@ export default async function ContactPage({
     <div className="flex flex-col">
       <JsonLd data={contactSchema} />
       <PageHero 
-        badge={content.hero.badge}
+        badge={(content.hero.badge as any)[locale]}
         title={content.hero.title[locale]}
         description={content.hero.description[locale]}
-        centered
       />
       
       <Section background="base">
