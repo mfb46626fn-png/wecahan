@@ -13,7 +13,7 @@ export default function FocusAreas({ locale }: FocusAreasProps) {
   return (
     <Section background="surface" className="border-t border-border-subtle">
       <SectionIntro 
-        badge={content.badge}
+        badge={(content.badge as any)[locale]}
         title={content.title[locale]}
       />
 

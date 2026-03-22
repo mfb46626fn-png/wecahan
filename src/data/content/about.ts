@@ -43,7 +43,7 @@ export const aboutContent = {
     }
   },
   principles: {
-    badge: "Principles",
+    badge: { tr: "Prensipler", en: "Principles" },
     title: { tr: "Nasıl Düşünüyoruz", en: "How We Think" },
     items: [
       {
@@ -70,7 +70,7 @@ export const aboutContent = {
     ]
   },
   focusAreas: {
-    badge: "Focus",
+    badge: { tr: "Odak", en: "Focus" },
     title: { tr: "Odak Alanları", en: "Focus Areas" },
     items: [
       {

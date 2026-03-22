@@ -13,7 +13,7 @@ export default function Principles({ locale }: PrinciplesProps) {
   return (
     <Section background="base">
       <SectionIntro 
-        badge={content.badge}
+        badge={(content.badge as any)[locale]}
         title={content.title[locale]}
       />
 
