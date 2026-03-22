@@ -3,7 +3,6 @@ import Section from '@/components/shared/layout/Section';
 import SectionIntro from '@/components/shared/layout/SectionIntro';
 import { homeContent } from '@/data/content/home';
 import { founders } from '@/data/people/founders';
-import { Linkedin } from 'lucide-react';
 
 interface FoundersSnapshotProps {
   locale: 'tr' | 'en';
@@ -34,16 +33,6 @@ export default function FoundersSnapshot({ locale }: FoundersSnapshotProps) {
                     {founder.role}
                   </p>
                 </div>
-                {founder.linkedin && (
-                  <a 
-                    href={founder.linkedin} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-text-muted hover:text-text-primary transition-colors"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                )}
               </div>
               <p className="text-text-secondary text-sm leading-relaxed">
                 {founder.bio}
