@@ -15,7 +15,7 @@ export default function FoundersSnapshot({ locale }: FoundersSnapshotProps) {
   return (
     <Section background="base">
       <SectionIntro 
-        badge={content.badge}
+        badge={(content.badge as any)[locale]}
         title={content.title[locale]}
         description={content.description[locale]}
       />

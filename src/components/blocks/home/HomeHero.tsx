@@ -27,7 +27,7 @@ export default function HomeHero({ locale }: HomeHeroProps) {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block text-brand-accent text-xs font-bold tracking-[0.3em] uppercase mb-6 mx-auto">
-            {content.badge}
+            {(content.badge as any)[locale]}
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 max-w-5xl leading-[1.05] tracking-tight font-display mx-auto">
             {content.title[locale]}

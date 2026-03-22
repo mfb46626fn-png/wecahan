@@ -16,7 +16,7 @@ export default function AboutSnapshot({ locale }: AboutSnapshotProps) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
           <span className="inline-block text-brand-accent text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            {content.badge}
+            {(content.badge as any)[locale]}
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
             {content.title[locale]}

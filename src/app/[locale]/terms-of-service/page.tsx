@@ -28,7 +28,7 @@ export default async function TermsOfService({
   return (
     <div className="flex flex-col">
       <PageHero 
-        badge="Legal"
+        badge={legalContent.badge[locale]}
         title={content.title[locale]}
         description=""
       />

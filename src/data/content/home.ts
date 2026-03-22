@@ -1,6 +1,6 @@
 export const homeContent = {
   hero: {
-    badge: "WeCaHan",
+    badge: { tr: "WeCaHan", en: "WeCaHan" },
     title: {
       tr: "Dijital sistemler ve seçili proje ekosistemleri",
       en: "Digital systems and selected project ecosystems"
@@ -21,7 +21,7 @@ export const homeContent = {
     }
   },
   capabilities: {
-    badge: "Expertise",
+    badge: { tr: "Uzmanlık", en: "Expertise" },
     title: {
       tr: "Ne İnşa Ediyoruz",
       en: "What We Build"
@@ -78,7 +78,7 @@ export const homeContent = {
     ]
   },
   aboutSnapshot: {
-    badge: "About",
+    badge: { tr: "Hakkımızda", en: "About" },
     title: {
       tr: "Sistem Düşüncesi İle İnşa Ediyoruz",
       en: "Building with System Thinking"
@@ -94,7 +94,7 @@ export const homeContent = {
     }
   },
   selectedProjects: {
-    badge: "Ecossytem",
+    badge: { tr: "Ekosistem", en: "Ecosystem" },
     title: {
       tr: "Seçili Projeler",
       en: "Selected Projects"
@@ -105,7 +105,7 @@ export const homeContent = {
     }
   },
   foundersSnapshot: {
-    badge: "Founders",
+    badge: { tr: "Kurucular", en: "Founders" },
     title: {
       tr: "Çekirdek Kadro",
       en: "Core Team"

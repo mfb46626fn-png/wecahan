@@ -1,4 +1,5 @@
 export const legalContent = {
+  badge: { tr: "Yasal", en: "Legal" },
   privacy: {
     title: { tr: "Gizlilik Politikası", en: "Privacy Policy" },
     lastUpdated: { tr: "Son Güncelleme: 21 Mart 2026", en: "Last Updated: March 21, 2026" },

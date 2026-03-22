@@ -21,7 +21,7 @@ export default function CapabilityGrid({ locale }: CapabilityGridProps) {
   return (
     <Section background="surface" className="border-y border-border-subtle">
       <SectionIntro 
-        badge={content.badge}
+        badge={(content.badge as any)[locale]}
         title={content.title[locale]}
         description={content.description[locale]}
       />

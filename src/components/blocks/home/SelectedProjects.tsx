@@ -18,7 +18,7 @@ export default function SelectedProjects({ projects, locale }: SelectedProjectsP
     <Section background="surface">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
         <SectionIntro 
-          badge={content.badge}
+          badge={(content.badge as any)[locale]}
           title={content.title[locale]}
           description={content.description[locale]}
           className="mb-0"

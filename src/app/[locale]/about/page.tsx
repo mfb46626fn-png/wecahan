@@ -46,7 +46,7 @@ export default async function AboutPage({
     <div className="flex flex-col">
       <JsonLd data={aboutSchema} />
       <PageHero 
-        badge={hero.badge}
+        badge={hero.badge[locale as keyof typeof hero.badge]}
         title={hero.title[locale]}
         description={hero.description[locale]}
       />

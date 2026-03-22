@@ -1,6 +1,6 @@
 export const projectsPageContent = {
   hero: {
-    badge: "Ecosystem",
+    badge: { tr: "Ekosistem", en: "Ecosystem" },
     title: {
       tr: "Projeler",
       en: "Projects"

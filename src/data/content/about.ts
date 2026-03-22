@@ -1,6 +1,6 @@
 export const aboutContent = {
   hero: {
-    badge: "About WeCaHan",
+    badge: { tr: "WeCaHan Hakkında", en: "About WeCaHan" },
     title: {
       tr: "Mühendislik ve Sistem Odaklı Yaklaşım",
       en: "Engineering and System-Oriented Approach"
