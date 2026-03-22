@@ -71,8 +71,8 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
         title={project.ctaTitle}
         description=""
         ctaLabel={project.ctaLabel}
-        ctaHref={project.status === 'active' && project.externalUrl ? project.externalUrl : '/contact'}
-        isExternal={project.status === 'active' && !!project.externalUrl}
+        ctaHref={project.externalUrl || '/contact'}
+        isExternal={!!project.externalUrl}
       />
     </div>
   );
