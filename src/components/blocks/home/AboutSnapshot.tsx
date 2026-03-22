@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '@/components/shared/layout/Section';
 import { homeContent } from '@/data/content/home';
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import { ArrowRight } from 'lucide-react';
 
@@ -31,11 +32,14 @@ export default function AboutSnapshot({ locale }: AboutSnapshotProps) {
         </div>
         
         <div className="relative aspect-video rounded-xl overflow-hidden border border-border-card bg-surface-lighter">
-           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,180,216,0.1)_0%,transparent_70%)]" />
-           {/* Placeholder for an abstract image or graphic */}
-           <div className="flex items-center justify-center h-full text-text-muted text-xs uppercase tracking-widest">
-              Brand Visual
-           </div>
+           <Image 
+             src="/brand-visual.png" 
+             alt="WeCaHan Brand Visual" 
+             fill
+             className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
+             sizes="(max-w-7xl) 50vw, 100vw"
+           />
+           <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent pointer-events-none" />
         </div>
       </div>
     </Section>
