@@ -35,6 +35,7 @@ export default async function TermsOfService({
       <LegalContent 
         title={content.title[locale]}
         content={content.content[locale]}
+        lastUpdated={content.lastUpdated[locale]}
       />
     </div>
   );

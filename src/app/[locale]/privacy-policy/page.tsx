@@ -35,6 +35,7 @@ export default async function PrivacyPolicy({
       <LegalContent 
         title={content.title[locale]}
         content={content.content[locale]}
+        lastUpdated={content.lastUpdated[locale]}
       />
     </div>
   );
