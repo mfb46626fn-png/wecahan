@@ -1,7 +1,6 @@
 import { NavItem } from "@/types/navigation";
 
 export const mainNavigation: NavItem[] = [
-  { label: "home", href: "/" },
   { label: "about", href: "/about" },
   { label: "projects", href: "/projects" },
   { label: "contact", href: "/contact" },

@@ -4,7 +4,6 @@ export const footerData: FooterGroup[] = [
   {
     title: "explore",
     links: [
-      { label: "home", href: "/" },
       { label: "about", href: "/about" },
       { label: "projects", href: "/projects" },
       { label: "contact", href: "/contact" },
